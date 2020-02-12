@@ -1,1 +1,55 @@
 // Specific CSS for your home-page
+.container-home {
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+}
+
+.master-banner {
+  padding: 300px 0;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://source.unsplash.com/random/1000x500");
+  background-size: cover;
+  color: white;
+}
+
+.secondary-banner {
+  padding: 200px 0;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://source.unsplash.com/random/1000x200");
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+.master-banner > .container {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.asset {
+  display: flex;
+  // min-width: 300px;
+
+  .asset-text{
+    text-align: left;
+    padding-left: 8px;
+    padding-top:16px;
+
+    h2 {
+      padding-bottom: 8px;
+    }
+  }
+
+  .asset-img {
+    min-width: 80px;
+    text-align: center;
+
+
+    i {
+      color: green;
+      font-size: 50px;
+    }
+  }
+}
+
