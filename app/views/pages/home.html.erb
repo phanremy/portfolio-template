@@ -1,11 +1,20 @@
-<div class="master-banner">
+<div class="master-banner" id="master-banner">
   <div class="container text-center">
       My portfolio
       <br><%= link_to "Click here", "", class:"btn btn-success px-5"  %>
   </div>
 </div>
 
-<div class="py-5">
+<div id="tabs">
+  <%#= render 'shared/tabs' %>
+</div>
+
+<div id="table-of-content">
+  <%= render 'shared/table-of-content' %>
+</div>
+
+
+<div class="py-5" id="text">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6 py-2 bg-white">
@@ -24,7 +33,7 @@
   </div>
 </div>
 
-<div class="secondary-banner">
+<div class="secondary-banner" id="secondary-banner">
   <div class="container container-home text-center">
     <h2> Want to work with us?</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit architecto rerum vitae laboriosam illo soluta, amet maiores fugiat qui animi natus corporis adipisci, impedit non labore quas! Odio, hic, sint!</p>
@@ -32,48 +41,16 @@
   </div>
 </div>
 
-<div style="background-color: white" class="py-5">
-  <div class="container container-home text-center">
-    <h2> Beautiful. Clean. Responsive.</h2>
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-3">
-          <div class="asset">
-            <div class="asset-img">
-              <i class="far fa-heart"></i>
-            </div>
-            <div class="asset-text">
-              <h2>Passion</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-3">
-          <div class="asset">
-            <div class="asset-img">
-              <i class="far fa-lightbulb"></i>
-            </div>
-            <div class="asset-text">
-              <h2>Creativity</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-3">
-          <div class="asset">
-            <div class="asset-img">
-              <i class="far fa-star"></i>
-            </div>
-            <div class="asset-text">
-             <h2>Quality</h2>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
+<div id="portfolio-links">
+  <%= render 'shared/portfolio-links' %>
+</div>
+<%#= render 'shared/tabs' %>
+
+<div id="assets">
+  <%= render 'shared/assets' %>
 </div>
 
-<div class="py-5">
+<div class="py-5" id="cards">
   <div class="container container-home text-center">
     <h2> Check out our latest works</h2>
     <div class="cards">
@@ -84,7 +61,7 @@
   </div>
 </div>
 
-<div style="background-color: white" class="py-5">
+<div style="background-color: white" class="py-5" id="collaborate-section">
   <div class="container container-home text-center">
     <h2> Want to work with us?</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit architecto rerum vitae laboriosam illo soluta, amet maiores fugiat qui animi natus corporis adipisci, impedit non labore quas! Odio, hic, sint!</p>
@@ -92,25 +69,10 @@
   </div>
 </div>
 
-<div style="background-color: #2B4155" class="py-5">
-  <div class="container container-home">
-    <div class="row justify-content-center">
-      <div class="col-6 col-lg-3 py-2 text-white">
-        <h2>WHO WE ARE</h2>
-      </div>
-      <div class="col-6 col-lg-3 py-2 text-white">
-        <h2>LATEST WORKS</h2>
-      </div>
-      <div class="col-6 col-lg-3 py-2 text-white">
-        <h2>GET IN TOUCH</h2>
-      </div>
-      <div class="col-6 col-lg-3 py-2 text-white">
-        <h2>FREE UPDATES</h2>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Email" aria-label="Email">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Update me!</button>
-        </form>
-      </div>
-    </div>
-  </div>
+<div id="social-footer">
+  <%= render 'shared/social-links' %>
+</div>
+
+<div id="master-footer">
+  <%= render 'shared/master-footer' %>
 </div>
