@@ -5,10 +5,6 @@
   </div>
 </div>
 
-<div id="tabs">
-  <%#= render 'shared/tabs' %>
-</div>
-
 <div id="table-of-content">
   <%= render 'shared/table-of-content' %>
 </div>
@@ -44,7 +40,10 @@
 <div id="portfolio-links">
   <%= render 'shared/portfolio-links' %>
 </div>
-<%#= render 'shared/tabs' %>
+
+<div id="tabs">
+  <%= render 'shared/tabs' %>
+</div>
 
 <div id="assets">
   <%= render 'shared/assets' %>
@@ -54,11 +53,15 @@
   <div class="container container-home text-center">
     <h2> Check out our latest works</h2>
     <div class="cards">
-      <%= render "shared/card" %>
-      <!-- <%= render "shared/card" %> -->
-      <%= render "shared/card" %>
+      <% @url_image_path = "https://source.unsplash.com/random/200x200" %>
+      <%= render "shared/vertical-card" %>
+      <% @url_image_path = "https://source.unsplash.com/random/200x199" %>
+      <%= render "shared/vertical-card" %>
+      <% @url_image_path = "https://source.unsplash.com/random/199x199" %>
+      <%= render "shared/vertical-card" %>
     </div>
   </div>
+
 </div>
 
 <div style="background-color: white" class="py-5" id="collaborate-section">

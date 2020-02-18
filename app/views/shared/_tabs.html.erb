@@ -1,10 +1,30 @@
-<div class="container container-home py-5 text-center">
+<div class="container container-home py-5 text-center" style="height:700px;">
   <h2>A Little Bit About Me..</h2>
-  <ul class="d-flex align-items-center" style="text-decoration: none;">
-    <li>Achievements</li>
-    <li>Projects</li>
-    <li>Blog Posts</li>
-    <li>Current Works</li>
-    <li>Hobbies</li>
+  <ul class="d-flex align-items-center justify-content-center mt-5" style="list-style: none">
+    <li class="btn active btn-primary border m-2" id="achievements-selector">Achievements</li>
+    <li class="btn btn-success border m-2" id="current-works-selector">Current Works</li>
+    <!-- <li class="btn btn-danger border m-2">Blog Posts</li> -->
+    <!-- <li class="btn btn-warning border m-2">Projects</li> -->
+    <!-- <li class="btn btn-info border m-2">Hobbies</li> -->
   </ul>
+  <div class="active portolio-section" id="achievements">
+    <% @url_image_path = "https://source.unsplash.com/random/120x120" %>
+    <%= render 'shared/horizontal-card' %>
+    <% @url_image_path = "https://source.unsplash.com/random/120x119" %>
+    <%= render 'shared/horizontal-card' %>
+    <% @url_image_path = "https://source.unsplash.com/random/119x119" %>
+    <%= render 'shared/horizontal-card' %>
+  </div>
+  <div class="hidden portolio-section" id="current-works">
+    <div class="cards">
+      <% @url_image_path = "https://source.unsplash.com/random/200x200" %>
+      <%= render "shared/vertical-card" %>
+      <% @url_image_path = "https://source.unsplash.com/random/200x199" %>
+      <%= render "shared/vertical-card" %>
+      <% @url_image_path = "https://source.unsplash.com/random/199x199" %>
+      <%= render "shared/vertical-card" %>
+    </div>
+  </div>
 </div>
+
+
