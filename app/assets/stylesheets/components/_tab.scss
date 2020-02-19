@@ -1,4 +1,4 @@
-.portolio-section {
+.tab-section {
   &.active {
     display:block;
     opacity: 1;
@@ -9,6 +9,7 @@
     opacity: 0;
   }
 }
+
 .tab-selector {
   border: 1px solid lightgrey;
   // height: 150px;
@@ -25,10 +26,6 @@
   &.active {
     background-color: lightgreen;
   }
-}
-
-ul {
-  padding: 0;
 }
 
 @media only screen and (min-width: 576px) {

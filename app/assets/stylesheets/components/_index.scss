@@ -2,11 +2,13 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
-@import "footer";
+
+// Portfolio components
+@import "social-footer";
+@import "container";
+@import "portfolio";
 @import "banner";
+@import "asset";
+@import "footer";
 @import "card";
 @import "tab";
-
-html {
-  // width: 100%;
-}
