@@ -7,6 +7,24 @@
   }
 }
 
+.selector {
+  border: 1px solid lightgrey;
+  // height: 150px;
+  width: 150px;
+  flex-wrap: wrap;
+  // border-radius: 50%;
+  display: flex;
+  justify-content : center;
+  align-items: center;
+  padding:5px;
+  margin:5px;
+
+  &.active {
+    background-color: lightgreen;
+  }
+}
+
+
 .master-banner {
   padding: 300px 0;
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://source.unsplash.com/random/1000x500");

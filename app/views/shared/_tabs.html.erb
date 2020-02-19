@@ -1,28 +1,49 @@
-<div class="container container-home py-5 text-center" style="height:700px;">
-  <h2>A Little Bit About Me..</h2>
-  <ul class="d-flex align-items-center justify-content-center mt-5" style="list-style: none">
-    <li class="btn active btn-primary border m-2" id="achievements-selector">Achievements</li>
-    <li class="btn btn-success border m-2" id="current-works-selector">Current Works</li>
+<div class="container container-home py-5" style="">
+  <h2 class="text-center">A Little Bit About Me..</h2>
+  <ul class="d-flex flex-wrap align-items-center justify-content-center mt-5" style="list-style: none">
+    <li class="active selector" id="achievements-selector">Achievements</li>
+    <li class=" selector" id="current-works-selector">Current Works</li>
+    <li class=" selector" id="collaborations-selector">Collaborations</li>
     <!-- <li class="btn btn-danger border m-2">Blog Posts</li> -->
-    <!-- <li class="btn btn-warning border m-2">Projects</li> -->
     <!-- <li class="btn btn-info border m-2">Hobbies</li> -->
   </ul>
   <div class="active portolio-section" id="achievements">
-    <% @url_image_path = "https://source.unsplash.com/random/120x120" %>
-    <%= render 'shared/horizontal-card' %>
-    <% @url_image_path = "https://source.unsplash.com/random/120x119" %>
-    <%= render 'shared/horizontal-card' %>
-    <% @url_image_path = "https://source.unsplash.com/random/119x119" %>
-    <%= render 'shared/horizontal-card' %>
+    <div class="cards">
+      <% @card_title = "Achievement 1" %>
+      <% @url_image_path = "https://source.unsplash.com/random/120x120" %>
+      <%= render 'shared/horizontal-card' %>
+      <% @card_title = "Achievement 2" %>
+      <% @url_image_path = "https://source.unsplash.com/random/120x119" %>
+      <%= render 'shared/horizontal-card' %>
+      <% @card_title = "Achievement 3" %>
+      <% @url_image_path = "https://source.unsplash.com/random/119x119" %>
+      <%= render 'shared/horizontal-card' %>
+    </div>
   </div>
   <div class="hidden portolio-section" id="current-works">
-    <div class="cards">
-      <% @url_image_path = "https://source.unsplash.com/random/200x200" %>
-      <%= render "shared/vertical-card" %>
-      <% @url_image_path = "https://source.unsplash.com/random/200x199" %>
-      <%= render "shared/vertical-card" %>
-      <% @url_image_path = "https://source.unsplash.com/random/199x199" %>
-      <%= render "shared/vertical-card" %>
+    <div class="row justify-content-center py-2">
+      <div class="col-10 col-lg-6 d-flex align-items-center justify-content-center">
+        <img class="rounded" src="https://source.unsplash.com/random/300x200" alt="Card image cap">
+      </div>
+      <div class="col-10 col-lg-6 pt-4 pt-lg-3 text-left" data-aos="fade-up" data-aos-easing="linear">
+        <h4>Ongoing Projects</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam et, impedit, placeat voluptate dolores labore quibusdam dolore mollitia amet quisquam reiciendis perferendis dolorem nostrum nobis eveniet nisi, earum illo ea.</p>
+      </div>
+    </div>
+  </div>
+  <div class="hidden portfolio-section" id="collaborations">
+    <div class="row justify-content-center py-2">
+      <div class="col-10 col-lg-4 pt-4 pt-lg-5 text-left" data-aos="fade-up" data-aos-easing="linear">
+        <h4>Collaboration 1</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam et, impedit, placeat voluptate dolores labore quibusdam dolore mollitia amet quisquam reiciendis perferendis dolorem nostrum nobis eveniet nisi, earum illo ea.</p>
+      </div>
+      <div class="col-10 col-lg-4 d-flex align-items-center justify-content-center">
+        <img class="rounded" src="https://source.unsplash.com/random/200x300" alt="Card image cap">
+      </div>
+      <div class="col-10 col-lg-4 pt-4 pt-lg-5 text-left" data-aos="fade-up" data-aos-easing="linear">
+        <h4>Collaboration 2</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam et, impedit, placeat voluptate dolores labore quibusdam dolore mollitia amet quisquam reiciendis perferendis dolorem nostrum nobis eveniet nisi, earum illo ea.</p>
+      </div>
     </div>
   </div>
 </div>
