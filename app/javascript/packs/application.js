@@ -65,6 +65,8 @@ const selectorCarousel = () => {
   }
 }
 
-selectorCarousel();
-setInterval(selectorCarousel, 15000);
-// selectorCarousel();
+if (document.getElementById('collaborations-selector')) {
+  selectorCarousel();
+  setInterval(selectorCarousel, 15000);
+}
+
