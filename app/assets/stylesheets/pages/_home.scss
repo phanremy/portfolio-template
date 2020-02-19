@@ -7,32 +7,9 @@
   }
 }
 
-.selector {
-  border: 1px solid lightgrey;
-  // height: 150px;
-  width: 150px;
-  flex-wrap: wrap;
-  // border-radius: 50%;
-  display: flex;
-  justify-content : center;
-  align-items: center;
-  padding:8px;
-  margin: 8px 16px;
-
-  &.active {
-    background-color: lightgreen;
-  }
-}
 
 ul {
   padding: 0;
-}
-
-@media only screen and (min-width: 576px) {
-  .selector {
-    height: 150px;
-    border-radius: 50%;
-  }
 }
 
 .master-banner {
